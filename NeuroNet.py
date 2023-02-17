@@ -102,4 +102,4 @@ if __name__ == "__main__":
     wb = xl.load_workbook("./Тестовые данные.xlsx")
     data = [([wb["Лист1"].cell(row=i, column=j).value for j in range(2, 14)], wb["Лист1"][f"N{i}"].value)
          for i in range(2, 100)]
-    Network.SGD(data, 1000, 7, 14, data, True)
+    Network.SGD(data, 1000, 7, 2, data, True)
